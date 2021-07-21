@@ -22,3 +22,8 @@ class Solution:
                 n += 1
         
         return n
+    
+    
+    class Solution:
+    def findNumbers(self, N: List[int]) -> int:
+        return sum(len(str(n)) % 2 == 0 for n in N)
